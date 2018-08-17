@@ -9,7 +9,7 @@
 
 ;(function($){
 	// $.prototype === $.fn
-	$.prototype.lxzoom = function(options){
+	$.prototype.yzoom = function(options){
 		// 这里的this指向：实例（jquery对象）
 
 		var defaults = {
