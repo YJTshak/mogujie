@@ -59,15 +59,28 @@
     >a{display:inline-block;height:100%;float:left;font-size:12px;font-weight:normal;color:#666;margin-left:20px;}
 }
 .nav-a1,.nav-a3{color:#ff0077!important;}
-.banner{position:relative;height: 440px;overflow:hidden;}
+.banner{position:relative;width:768px;height: 440px;overflow:hidden;}
 .banner{
-    >ul{position:absolute;overflow:hidden;}
+    >ul{position:absolute;overflow:hidden;height:440px;}
     >ul{
-        li
+        li{float:left;}
+        >li{
+            >a{
+                >img{display:block;}
+            }
+        }
     }
-    >a{
-        >img{display:block;float:left;}
+    
+    .page{position:absolute;right:0;bottom:0;padding:10px;}
+    .page{
+        >span{display:inline-block;margin:0 5px;width:30px;height:30px;line-height:30px;background-color:rgba(0,0,0,.6);text-align:center;color:#fff;border-radius: 50%;box-shadow:0 0 10px rgba(0,0,0,.5);}
+        >span{
+            .active{background:rgba(255,0,0,0.8);}
+        }
     }
-}
+    >span{display:none;position:absolute;left:0;top:50%;transform: translate(0,-50%);padding:50px 16px;background-color: rgba(0,0,0,0.5);color:#fff;}
+    >span:hover{background:rgba(255,0,0,0.8);}
+    :hover>span{display:block;}
+    }
 
 

@@ -284,17 +284,64 @@
 
 .banner {
   position: relative;
+  width: 768px;
   height: 440px;
   overflow: hidden;
 }
 
-.banner > a {
+.banner > ul {
   position: absolute;
   overflow: hidden;
+  height: 440px;
 }
 
-.banner > a > img {
-  background-size: 100%;
-  display: block;
+.banner > ul li {
   float: left;
+}
+
+.banner > ul > li > a > img {
+  display: block;
+}
+
+.banner .page {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+}
+
+.banner .page > span {
+  display: inline-block;
+  margin: 0 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner .page > span .active {
+  background: rgba(255, 0, 0, 0.8);
+}
+
+.banner > span {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 50px 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.banner > span:hover {
+  background: rgba(255, 0, 0, 0.8);
+}
+
+.banner :hover > span {
+  display: block;
 }
