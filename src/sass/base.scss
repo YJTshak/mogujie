@@ -59,4 +59,15 @@
     >a{display:inline-block;height:100%;float:left;font-size:12px;font-weight:normal;color:#666;margin-left:20px;}
 }
 .nav-a1,.nav-a3{color:#ff0077!important;}
+.banner{position:relative;height: 440px;overflow:hidden;}
+.banner{
+    >ul{position:absolute;overflow:hidden;}
+    >ul{
+        li
+    }
+    >a{
+        >img{display:block;float:left;}
+    }
+}
+
 

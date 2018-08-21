@@ -281,3 +281,20 @@
 .nav-a1, .nav-a3 {
   color: #ff0077 !important;
 }
+
+.banner {
+  position: relative;
+  height: 440px;
+  overflow: hidden;
+}
+
+.banner > a {
+  position: absolute;
+  overflow: hidden;
+}
+
+.banner > a > img {
+  background-size: 100%;
+  display: block;
+  float: left;
+}
