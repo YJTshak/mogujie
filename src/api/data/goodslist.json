@@ -1,43 +1,49 @@
 [{
     "id":001,
     "name":"东方脚印纯棉毛巾洗脸家用男女柔软吸水加厚成人全棉情侣洗脸毛巾",
-    "imgurl":"../img/n$.jpg",
+    "imgurl":"../img/n1.jpg",
     "price":"￥36",
     "sale":50
     },{
     "id":002,
     "name":"东方脚印纯棉毛巾洗脸家用男女柔软吸水加厚成人全棉情侣洗脸毛巾",
-    "imgurl":"../img/n$.jpg",
+    "imgurl":"../img/n2.jpg",
     "price":"￥29",
     "sale":70
     },{
     "id":003,
     "name":"东方脚印纯棉毛巾洗脸家用男女柔软吸水加厚成人全棉情侣洗脸毛巾",
-    "imgurl":"../img/n$.jpg",
+    "imgurl":"../img/n3.jpg",
     "price":"￥99",
     "sale":592
     },{
     "id":004,
     "name":"东方脚印纯棉毛巾洗脸家用男女柔软吸水加厚成人全棉情侣洗脸毛巾",
-    "imgurl":"../img/n$.jpg",
+    "imgurl":"../img/n4.jpg",
     "price":"￥98",
     "sale":582
     },{
     "id":005,
     "name":"东方脚印纯棉毛巾洗脸家用男女柔软吸水加厚成人全棉情侣洗脸毛巾",
-    "imgurl":"../img/n$.jpg",
+    "imgurl":"../img/n5.jpg",
     "price":"￥90",
     "sale":562
     },{
     "id":006,
     "name":"东方脚印纯棉毛巾洗脸家用男女柔软吸水加厚成人全棉情侣洗脸毛巾",
-    "imgurl":"../img/n$.jpg",
+    "imgurl":"../img/n6.jpg",
     "price":"￥78",
     "sale":502
     },{
     "id":007,
     "name":"东方脚印纯棉毛巾洗脸家用男女柔软吸水加厚成人全棉情侣洗脸毛巾",
-    "imgurl":"../img/n$.jpg",
+    "imgurl":"../img/n7.jpg",
     "price":"￥108",
     "sale":552
+    },{
+    "id":008,
+    "name":"东方脚印纯棉毛巾洗脸家用男女柔软吸水加厚成人全棉情侣洗脸毛巾",
+    "imgurl":"../img/n8.jpg",
+    "price":"￥118",
+    "sale":468
     },]

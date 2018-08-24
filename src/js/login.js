@@ -1,5 +1,5 @@
 
-
+<=========================登录=======================>
 document.addEventListener('DOMContentLoaded',()=>{
     let username = document.querySelector('.username');
     let psw = document.querySelector('.psw');
@@ -32,4 +32,10 @@ document.addEventListener('DOMContentLoaded',()=>{
     pus.onclick = ()=>{
         help.innerHTML = '';
     }
+
+
+    let xhr = new XMLHttpRequest();
+
+    
+
 })
