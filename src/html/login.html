@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>登录</title>
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css" />
     <link rel="stylesheet" href="../css/base (2).css" />
     <link rel="stylesheet" href="../css/base.css" />
     <script src="../js/common.js"></script>
@@ -35,6 +36,8 @@
                 </div>
                 <a href="#">点击下载蘑菇街APP</a>
             </div>
+        </div>
+        <div class="registers">
             <div class="code-hit">
                 <div class="mod fl">
                     <a href="#"class="mod-l" title="普通登入">普通登录</a>
@@ -42,18 +45,23 @@
                 <div class="mod fl">
                     <a href="#" class="mod-r" title="手机免密码登入">手机免密码登录</a>
                 </div>
-                
             </div>
             <div class="code-hid">
                 <div class="code-hidl">
                     <a href="#"></a>
                 </div>
-                <div class="mod-b">
-                    <form action="name">
-                        <span class="help-block"></span>
+                <div class="mod-b clearfix">
+                    <form action="name" class="form-group fl">
                         <input type="text" placeholder="用户名/邮箱/手机号" class="username pus" />
+                        <span class="help-block"></span>
                         <input type="password" placeholder="密码" class="psw pus" />
-                        <input type="submit" class="btn" value="登录" />
+                        <input type="submit" class="btn" value="登录" /> 
+                    </form>
+                    <form action="name" class="form-help fl">
+                        <input type="text" class="num pus" placeholder="手机号码" />
+                        <a href="#" class="bon">动态验证码</a>
+                        <input type="text" class="auth" />
+                        <input type="submit" class="btn" get="localhost:86/index.html" value="登录" />
                     </form>
                     <p class="sub"><a href="#"><img src="//s17.mogucdn.com/p2/170104/upload_5763lkilh8f7abid345gbhh167d79_19x19.png"/>QQ登录</a><a href="#"><img src="//s16.mogucdn.com/p2/170104/upload_8d4dd486c18961b55lf0hbe5ebf7l_18x19.png"/>微信登录</a></p>
                     <p class="forget"><a href="#">忘记密码</a></p>

@@ -11,7 +11,7 @@
 
       $result = $conn->query($sql);
 
-      var_dump($result);
+      //var_dump($result);
       if($result->num_rows>0){
         echo "No";
       }else{
