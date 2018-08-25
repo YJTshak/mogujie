@@ -312,6 +312,39 @@ body{background:#F5F5F5;}
 }
 .bags-cn{width: 100%;background:#fff;height: 555px;padding-left:21px;}
 .bags-item{width: 182px;height: 233px;}
-
-
+//<=================购物车===============>
+#Cart{height: 90px;background:#f5f5f5 !important;}
+#Cart{
+    >.container{height: 90px;}
+}
+.header-topCart{height: 90px;}
+.cart-bar{width: 494px;}
+.cart-barc{width: 494px;background:url("https://s18.mogucdn.com/p1/160106/upload_ie3wkzrtmrtdozdfguzdambqgayde_157x23.png") 0 18px repeat-x;position:relative;height: 23px;margin:0 auto;padding:18px 0 24px;}
+.cart-barl{background:url("https://s16.mogucdn.com/p1/160106/upload_ie4wcntcmntdozdfguzdambqgqyde_157x23.png") 23px 0 repeat-x;position:absolute;top:18px;left:0;width: 90px;height: 23px;}
+.cart-barc{
+    >span:nth-child(2){left:0;}
+    >span:nth-child(2){
+        >i{color:#f46;}
+    }
+    >span{position:absolute;top:18px;width: 23px;height: 23px;color:#fff;text-align:center;font-size:14px;}
+    >span:nth-child(3){left:157px;}
+    >span:nth-child(4){left:314px;}
+    >span:nth-child(5){left:471px;}
+    >span{
+        >i{position:absolute;top:24px;width: 100px;height: 20px;left:50%;margin-left:-50px;color:#999;font-size:12px;}
+    }
+}
+#CartL{height: 392px;background:#fff; }
+#CartL{
+    >container{height: 392px;}
+}
+.goods-list{height: 392px;padding-top:30px;position:relative;}
+.gli{height: 38px;}
+.gli{
+    >li{float:left;}
+    >li{
+        >a{display:block;padding:1px 0 6px;color:#333;font-size:20px;}
+    }
+}
+.ga{margin-right:55px;}
 
