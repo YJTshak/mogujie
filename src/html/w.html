@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded',function(){
+    var xhr = new XMLHttpRequest();
+
+    var status = [200,304];
+
+    xhr.onload = ()=>{
+        if(status.indexOf(xhr.status)>=0){
+            var data = JSON.parse(xhr.responseText);
+            console.log(data);
+        }
+    }
+    xhr.open('get','http://mce.mogucdn.com/jsonp/multiget/3?callback=jQuery21102570416033812657_1535090990919&pids=98662&appPlat=pc&_=1535090990920');
+    xhr.send();
+})
+
+
+    </script>
+</body>
+</html>

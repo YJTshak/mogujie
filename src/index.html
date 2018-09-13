@@ -3,10 +3,114 @@
 <head>
     <meta charset="UTF-8" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <style type="text/css">
+        .swiper-container {
+                width: 960px;
+                height: 300px;
+            }
+            .swiper-slide{width: 460px; margin-right: 30px;}
+          .swiper-slide>img{width: 100%;height: 100%;}
+          .goods-image>img{width: 190px;height: 190px;}
+          .goods-title{display:block;}
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+
 </head>
 <body>
-    <header>
-        <h1>首页</h1>
-    </header>
+    <!-- <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/4.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="img/5.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="img/6.jpg" alt="" /></div>
+    </div>
+    
+    <div class="swiper-pagination"></div>
+    
+    
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+    
+    <div class="swiper-scrollbar"></div>
+</div> -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 10</div>
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"></div>
+      <div class="swiper-slide"><img src="img/4.jpg"/></div>
+      <div class="swiper-slide"><img src="img/5.jpg"/></div>
+      <div class="swiper-slide"><img src="img/6.jpg"/></div>
+      <div class="swiper-slide"><img src="img/mv3.jpg"/></div>
+      <div class="swiper-slide"><img src="img/mv4.jpg"/></div>
+      <div class="swiper-slide"><img src="img/mv5.jpg"/></div>
+      <div class="swiper-slide">
+
+      </div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+      <div class="swiper-slide">Slide 10</div>
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+        <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span>
+        <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+        <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+        <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"></div>
+    <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"></div>
+  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+<!-- <script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+    // direction: 'vertical',
+    // loop: true,
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // 如果需要滚动条
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+
+    autoplay: {
+    delay: 1000,//1秒切换一次
+  },
+  })
+       
+  </script> -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 </html>
