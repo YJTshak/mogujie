@@ -7,7 +7,7 @@ let sass = require('gulp-sass');
 
 
 gulp.task('compileSass',function(){
-    gulp.src('./src/sass/base.scss')
+    gulp.src('./src/sass/*.scss')
 
 
     .pipe(sass({outputStyle:'expanded'}))
@@ -19,5 +19,5 @@ gulp.task('compileSass',function(){
 
 
 gulp.task('autoSass',function(){
-    gulp.watch('./src/sass/base.scss',['compileSass']);
+    gulp.watch('./src/sass/*.scss',['compileSass']);
 });
