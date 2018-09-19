@@ -164,6 +164,43 @@
 
                 
             }
+
+
+            var output = document.querySelector('#output');
+                
+                
+                let status = [200,304];
+                let xhr = new XMLHttpRequest();
+                xhr.onload = ()=>{
+                    if(status.indexOf(xhr.status)>=0){
+                        
+                        let data = JSON.parse(xhr.responseText);
+                        
+                        
+                        output.innerHTML = data.map(item=>{
+                            return `<li data-guid="${item.id}">
+                                    <a href="#">找相似</a>
+                                    <a href="#">
+                                        <img src="${item.imgurl}">
+                                    </a>
+                                    <a href="#">
+                                        <p class="describe">${item.name}</p>
+                                        <div class="goods-info">
+                                            <b class="price">￥${item.price}</b>
+                                            <span class="sale">￥<del>${item.sale}</del></span>
+                                            <span class="like fr"><img src="//s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png" alt="" />452</span>
+                                        </div>
+                                    </a>
+                            </li>`
+                        }).join('');
+                        
+                    }
+                }
+                xhr.open('get','../api/goodslist.php');
+                xhr.send();
+
+
+
         })
             
     

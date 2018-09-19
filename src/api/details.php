@@ -5,7 +5,7 @@
 
     $id = isset($_GET['id']) ? $_GET['id'] : null;
 
-    $sql = "SELECT * FROM `goodslist` WHERE `index` = '$id'";
+    $sql = "select * from `goodslist` where `index` = '$id'";
 
     $result = $conn -> query($sql);
 

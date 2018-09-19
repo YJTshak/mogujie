@@ -855,6 +855,7 @@ body {
   width: 182px;
   height: 233px;
   margin-right: 21px;
+  margin-bottom: 24px;
 }
 
 .bags-item > a {
@@ -877,9 +878,81 @@ body {
 }
 
 .bags-item > a > p:nth-child(3) {
-  font-size: 16px;
+  font-size: 20px;
   color: #ff5777;
   margin-top: 5px;
+}
+
+.bags-rs {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.bags-t {
+  height: 76px;
+  line-height: 22px;
+  overflow: hidden;
+  width: 310px;
+  padding: 28px 20px 26px;
+}
+
+.bags-t > span:nth-child(1) {
+  font-size: 18px;
+  color: #333;
+}
+
+.bags-t > span:nth-child(2) {
+  font-size: 14px;
+  color: #333;
+  float: right;
+}
+
+.bags-s {
+  width: 270px;
+  display: block;
+  height: 93px;
+  margin: 0 auto 21px;
+}
+
+.bags-sl {
+  display: block;
+  width: 90px;
+  height: 93px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.bags-sl > img {
+  width: 100%;
+  height: 100%;
+}
+
+.bags-sr {
+  width: 170px;
+}
+
+.referral {
+  width: 100%;
+  height: 44px;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  line-height: 22px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.prices {
+  font-size: 20px;
+  color: #ff5777;
+}
+
+.prices > span {
+  font-size: 16px;
+  margin-right: 3px;
 }
 
 .boxb1-b {
@@ -930,4 +1003,13 @@ body {
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   right: 0;
+}
+
+.love {
+  height: 26px;
+  width: 100%;
+  margin-top: 20px;
+  line-height: 26px;
+  font-size: 20px;
+  font-weight: bold;
 }
