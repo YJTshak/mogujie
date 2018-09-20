@@ -864,6 +864,7 @@ body {
   height: 233px;
   font-size: 16px;
   color: #666;
+  text-decoration: none;
 }
 
 .bags-item > a > img {

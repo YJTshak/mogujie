@@ -213,7 +213,7 @@ body{background:#F5F5F5;}
 .bags-cn{width: 100%;background:#fff;height: 555px;padding-left:21px;}
 .bags-item{width: 182px;height: 233px;margin-right:21px;margin-bottom:24px;}
 .bags-item{
-    >a{display:block;width: 182px;height: 233px;font-size:16px;color:#666;}
+    >a{display:block;width: 182px;height: 233px;font-size:16px;color:#666;text-decoration:none;}
     >a{
         >img{width: 100%;height: 182px;}
         >p:nth-child(2){overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}

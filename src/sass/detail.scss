@@ -59,15 +59,38 @@
 }
 .small{width: 400px;height: 60px;padding:0 32px;margin-top:10px;
     >ul{height: 60px;
-    >li{float:left;width: 60px;margin-right:10px;
+    >li{float:left;width: 60px;height: 60px;margin-right:10px;
     >img{width: 100%;height: 100%;}
     }
     }
 }
 .goods-titles{width: 100%;color:#333;margin-bottom:15px;font-size:24px;}
-.discounts{width: 100%;background:#f6f6f6;}
-.price-del{width: 540px;height: 32px;padding-left:10px;color:#999;
+.discounts{width: 100%;background:#f6f6f6;
+    >dl{width: 536px;height: 32px;padding-left:10px;}
+}
+.price-del{color:#999;
     >dt{height: 32px;line-height:32px;font-weight:normal;
         >del{margin-left:30px;}
     }
 }
+.price-cx{
+    >dt{width: 60px;height: 32px;line-height:32px;color:#999;font-weight:normal;display:inline-block;float:left;}
+    >dd:nth-child(2){font-size:24px;font-weight:bold;color:#ef2f23;}
+    >dd:nth-child(3){
+        >span{color:#999;font-size:12px;margin-right:5px;
+        >i{color:#333;}
+        }
+    }
+}
+.cd{color:#999;
+    >dd{height: 30px;line-height:30px;margin:2px;}
+    }
+.coupon{width: 526px;height: 32px;margin-left:10px;line-height:32px;
+    >span{color:#999;font-size:14px;}
+    >p{display:inline-block;height: 32px;
+    >span{display:inline-block;height: 22px;border:1px solid #f57;border-radius:4px;line-height:22px;color:#f57;font-size:12px;padding-left:3px;
+    >i{display:inline-block;height: 20px;background:#f57;color:#fff;margin-left:3px;}
+    }
+    }
+}
+.more{margin-left:140px;}

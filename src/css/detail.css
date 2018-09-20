@@ -248,6 +248,7 @@
 .small > ul > li {
   float: left;
   width: 60px;
+  height: 60px;
   margin-right: 10px;
 }
 
@@ -268,10 +269,13 @@
   background: #f6f6f6;
 }
 
-.price-del {
-  width: 540px;
+.discounts > dl {
+  width: 536px;
   height: 32px;
   padding-left: 10px;
+}
+
+.price-del {
   color: #999;
 }
 
@@ -283,4 +287,80 @@
 
 .price-del > dt > del {
   margin-left: 30px;
+}
+
+.price-cx > dt {
+  width: 60px;
+  height: 32px;
+  line-height: 32px;
+  color: #999;
+  font-weight: normal;
+  display: inline-block;
+  float: left;
+}
+
+.price-cx > dd:nth-child(2) {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ef2f23;
+}
+
+.price-cx > dd:nth-child(3) > span {
+  color: #999;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.price-cx > dd:nth-child(3) > span > i {
+  color: #333;
+}
+
+.cd {
+  color: #999;
+}
+
+.cd > dd {
+  height: 30px;
+  line-height: 30px;
+  margin: 2px;
+}
+
+.coupon {
+  width: 526px;
+  height: 32px;
+  margin-left: 10px;
+  line-height: 32px;
+}
+
+.coupon > span {
+  color: #999;
+  font-size: 14px;
+}
+
+.coupon > p {
+  display: inline-block;
+  height: 32px;
+}
+
+.coupon > p > span {
+  display: inline-block;
+  height: 22px;
+  border: 1px solid #f57;
+  border-radius: 4px;
+  line-height: 22px;
+  color: #f57;
+  font-size: 12px;
+  padding-left: 3px;
+}
+
+.coupon > p > span > i {
+  display: inline-block;
+  height: 20px;
+  background: #f57;
+  color: #fff;
+  margin-left: 3px;
+}
+
+.more {
+  margin-left: 140px;
 }
