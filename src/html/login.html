@@ -30,7 +30,7 @@
         <div class="register">
             <div class="code">
                 <div class="code-l">
-                    <a href="#"></a>
+                    <span></span>
                 </div>
                 <div class="code-c"></div>
                 <div class="code-b">
@@ -53,24 +53,64 @@
                     <a href="#"></a>
                 </div>
                 <div class="mod-b clearfix">
-                    <form action="name" class="form-group fl">
-                        <input type="text" placeholder="用户名/邮箱/手机号" class="username pus" />
+                    <form class="form-group fl">
+                        <input type="text" placeholder="用户名/邮箱/手机号" class="username" />
                         <span class="help-block"></span>
-                        <input type="password" placeholder="密码" class="psw pus" />
-                        <input type="submit" class="btn" value="登录" /> 
+                        <input type="password" placeholder="密码" class="psw" />
+
+                        <input type="submit" id="btnlog" class="btn" value="登录" /> 
                     </form>
-                    <form action="name" class="form-help fl">
-                        <input type="text" class="num pus" placeholder="手机号码" />
-                        <a href="#" class="bon">动态验证码</a>
+                    <form class="form-help fl">
+                        <input type="text" class="num" placeholder="手机号码" />
+                        <a href="" class="bon">动态验证码</a>
                         <input type="text" class="auth" />
-                        <input type="submit" class="btn" value="登录" />
+                        
+                        <input type="submit" id="btnnum" class="btn" value="登录" />
                     </form>
-                    <p class="sub"><a href="#"><img src="//s17.mogucdn.com/p2/170104/upload_5763lkilh8f7abid345gbhh167d79_19x19.png"/>QQ登录</a><a href="#"><img src="//s16.mogucdn.com/p2/170104/upload_8d4dd486c18961b55lf0hbe5ebf7l_18x19.png"/>微信登录</a></p>
+                    <p class="sub"><a href=""><img src="//s17.mogucdn.com/p2/170104/upload_5763lkilh8f7abid345gbhh167d79_19x19.png"/>QQ登录</a><a href="#"><img src="//s16.mogucdn.com/p2/170104/upload_8d4dd486c18961b55lf0hbe5ebf7l_18x19.png"/>微信登录</a></p>
                     <p class="forget"><a href="#">忘记密码</a></p>
                 </div>
             </div>
         </div>
     </div>
+    <!-- <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded',()=>{
+            let username = document.querySelector('.username');
+            let psw = document.querySelector('.psw');
+            let btn = document.querySelector('#btnlog');
+
+            let statusCode = [200,304];
+
+            let xhr = new XMLHttpRequest();
+            xhr.onload = function(){
+                if(statusCode.indexOf(xhr.status)>=0){
+                    console.log(xhr.responseText);
+                    let res = xhr.responseText;
+
+                    if(res == 'success'){
+                        alert('登录成功');
+                        location.href = '../index.html';
+                    }else{
+                        alert('用户名或密码错误');
+                        
+                    }
+                }
+            }
+          
+
+            btn.onclick = function(e){
+                e.preventDefault();
+                let _username = username.value;
+                let _password = psw.value;
+                console.log(_username,_password);
+
+                xhr.open('get',`../api/login.php?username=${_username}&password=${_password}`,true);
+                xhr.send();
+            }
+        })
+
+
+    </script> -->
     <div id="foot">
         <div class="container">
             <div class="foot-t">

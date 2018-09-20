@@ -11,7 +11,7 @@
     $price = isset($_GET['price']) ? $_GET['price'] : null;
     $imgurl = isset($_GET['imgurl']) ? $_GET['imgurl'] : null;
   
-    $sql = "SELECT * FROM `shopping` WHERE `id` = '$id'";
+    $sql = "select * from `shopping` where `id` = '$id'";
     $result = $conn->query($sql);
 
     if($result->num_rows>0){
@@ -22,7 +22,7 @@
         echo "success";
     }else{
         // 加入购物车（保存到数据库）
-        $sql = "INSERT INTO `shopping`(`id`, `name`,`price`, `qty`,`node`,`imgurl`) VALUES ('$id','$name','$price','$qty','$node','$imgurl')";
+        $sql = "insert into `shopping`(`id`, `name`,`price`, `qty`,`node`,`imgurl`) values ('$id','$name','$price','$qty','$node','$imgurl')";
         // 执行sql语句
         $res = $conn->query($sql);
         // if($res){
