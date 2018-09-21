@@ -1,5 +1,24 @@
 
 body{background:#F5F5F5;}
+#nav-r{width: 30px;height: 100%;color:#fff;font-size:12px;background:#202020;position:fixed;right:0;top:0;z-index:9999;}
+.nav-cart{margin-top:40px;padding:4px 4px 0;text-align:center;
+    >a{padding:12px 0;border-bottom:1px solid rgba(221,221,211,0.6);position:relative;color:#fff;display:block;text-decoration:none;
+    >i{position:absolute;top:-4px;right:6px;}
+    }
+}
+.nav-yhj{padding:15px 4px 0;text-align:center;position:relative;
+    >a{padding:12px 0;border-bottom:1px solid rgba(221,221,211,0.6);color:#fff;display:block;text-decoration:none;
+    >i{position:absolute;top:10px;right:10px;}
+    }
+    >img{position:absolute;top:0;right:25px;display: none;}
+}
+.nav-cart:hover{background: #ef2f23;
+    >a{border-bottom:1px solid #ef2f23;}
+}
+.nav-yhj:hover{background: #ef2f23;
+    >a{border-bottom:1px solid #ef2f23;}
+    >img{display: block;}
+}
 #header{height: 31px;background:#f2f2f2;border-bottom:1px solid #ddd;}
 #header{
     >.container{padding:0;height: 31px;}
@@ -106,6 +125,7 @@ body{background:#F5F5F5;}
     >ul{
         >li{float:left;width:960px;height:294px;padding:0 20px;}
     }
+    >span{cursor:pointer;display:block !important;width: 25px !important;height:54px !important;background-size:cover;margin-top:-25px !important;position:absolute;top:140px;background:#999;text-align:center;line-height:54px;font-size:16px;color:#fff;text-decoratin:none !important;}
     } 
 
 .box1-b{width: 230px;height: 294px;padding:30px 20px 16px 20px;float:left;}
@@ -120,7 +140,7 @@ body{background:#F5F5F5;}
     del{display:inline-block;font-size:14px;color:#999;margin-left:10px;float:right;position:relative;top:9px;}
 }
 
-.mslide_toggle_btn{display:block !important;width: 25px !important;height:54px !important;background-size:cover;margin-top:-25px !important;position:absolute;top:140px;background:#999;text-align:center;line-height:54px;font-size:16px;color:#fff;text-decoratin:none !important;}
+//.mslide_toggle_btn{display:block !important;width: 25px !important;height:54px !important;background-size:cover;margin-top:-25px !important;position:absolute;top:140px;background:#999;text-align:center;line-height:54px;font-size:16px;color:#fff;text-decoratin:none !important;}
 .mslide_next_btn{background-position:-39px 0 !important;border-bottom-left-radius:5px;border-top-left-radius:5px;right:0;}
 .mian-bottom{height: 150px;overflow:hidden;}
 .mian-bottom{
@@ -159,6 +179,7 @@ body{background:#F5F5F5;}
     >ul{
         >li{float:left;}
     }
+    >a{display:block !important;width: 25px !important;height:54px !important;background-size:cover;margin-top:-25px !important;position:absolute;top:140px;background:#999;text-align:center;line-height:54px;font-size:16px;color:#fff;text-decoratin:none !important;}
     } 
 .woman-rc{width: 950px;height: 113px;}
 .woman-rb{width: 950px;height: 86px;margin-top:6px;}
@@ -243,7 +264,7 @@ body{background:#F5F5F5;}
 //.mslide_prevl_btn{left:16px;background:url('https://s10.mogucdn.com/mlcdn/c45406/180327_3cgej2gb2igbfjbcga60bgki26fal_25x54.png') no-repeat center;}
 //.mslide_nextl_btn{right:16px;background:url('https://s10.mogucdn.com/mlcdn/c45406/180327_2c7lk3618ij23ckhdf7i24f57a4ja_25x54.png') no-repeat center;}
 // .mslide_toggls_btn{margin-top:-60px;width: 25px;height: 54px;position:absolute;top:50%;}
-.mslide_toggles_btn{display:block !important;width: 25px !important;height:54px !important;background-size:cover;margin-top:-25px !important;position:absolute;top:140px;background:#999;text-align:center;line-height:54px;font-size:16px;color:#fff;text-decoratin:none !important;}
+//.mslide_toggles_btn{display:block !important;width: 25px !important;height:54px !important;background-size:cover;margin-top:-25px !important;position:absolute;top:140px;background:#999;text-align:center;line-height:54px;font-size:16px;color:#fff;text-decoratin:none !important;}
 .mslide_nextl_btn{background-position:-39px 0 !important;border-bottom-left-radius:5px;border-top-left-radius:5px;right:0;}
 .love{height: 26px;width: 100%;margin-top:20px;line-height:26px;font-size:20px;font-weight:bold;}
 

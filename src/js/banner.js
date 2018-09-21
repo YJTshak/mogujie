@@ -23,11 +23,11 @@
             
             // 添加上一张、下一张按钮
             let btnNext = document.createElement('span');
-            btnNext.className = 'mslide_next_btn mslide_toggle_btn';
+            btnNext.className = 'mslide_next_btn';
             btnNext.innerHTML = '&gt;';
 
             let btnPrev = document.createElement('span');
-            btnPrev.className = 'mslide_prev_btn mslide_toggle_btn';
+            btnPrev.className = 'mslide_prev_btn';
             btnPrev.innerHTML = '&lt;';
 
             banners.appendChild(btnPrev);
@@ -48,9 +48,9 @@
             }
 
             banners.onclick = function(e){
-                console.log(66)
+                
                 // 上一张，下一张
-                if(e.target.className === 'mslide_prev_btn'){console.log(88)
+                if(e.target.className === 'mslide_prev_btn'){
                     index--;
                     show();
                 }else if(e.target.className === 'mslide_next_btn'){
@@ -100,11 +100,11 @@
             
             // 添加上一张、下一张按钮
             let btnNextl = document.createElement('a');
-            btnNextl.className = 'mslide_nextl_btn mslide_toggles_btn';
+            btnNextl.className = 'mslide_nextl_btn';
             btnNextl.innerHTML = '&gt;';
 
             let btnPrevl = document.createElement('a');
-            btnPrevl.className = 'mslide_prevl_btn mslide_toggles_btn';
+            btnPrevl.className = 'mslide_prevl_btn';
             btnPrevl.innerHTML = '&lt;';
 
             bannerr.appendChild(btnPrevl);
@@ -165,7 +165,6 @@
                 
             }
 
-
             var output = document.querySelector('#output');
                 
                 
@@ -180,7 +179,7 @@
                         output.innerHTML = data.map(item=>{
                             return `<li data-guid="${item.id}">
                                     <a href="#">找相似</a>
-                                    <a href="#">
+                                    <a href="./html/goodslist.html">
                                         <img src="${item.imgurl}">
                                     </a>
                                     <a href="#">
@@ -200,6 +199,7 @@
                 xhr.send();
 
 
+            
 
         })
             

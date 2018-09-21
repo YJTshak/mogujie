@@ -51,11 +51,11 @@ document.addEventListener('DOMContentLoaded',()=>{
                         
                         output.innerHTML = data.map(item=>{
                             return `<li data-guid="${item.id}">
-                                    <a href="#">找相似</a>
-                                    <a href="#">
+                                    <a href="javascript:">找相似</a>
+                                    <a href="javascript:">
                                         <img src="${item.imgurl}">
                                     </a>
-                                    <a href="#">
+                                    <a href="javascript:">
                                         <p class="describe">${item.name}</p>
                                         <div class="goods-info">
                                             <b class="price">￥${item.price}</b>
@@ -72,6 +72,17 @@ document.addEventListener('DOMContentLoaded',()=>{
                 xhr.send();
 
 
+
+                output.onclick = function(e){
+                    // e.preventDefault();
+                    console.log(e.target.parentNode.parentNode.tagName.toLowerCase());
+                    if(e.target.parentNode.parentNode.tagName.toLowerCase() == 'li'){
+                        console.log(666)
+                        var id = e.target.parentNode.parentNode.getAttribute('data-guid');
+                        console.log(id);
+                        location.href="../html.detail.html?id=" + id;
+                    }
+                }
                 // let desc = false;
                 // toobar.onclick = e=>{
                 //     if(e.target.className === 'sort-price'){
