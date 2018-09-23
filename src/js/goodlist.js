@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded',()=>{
                 xhr.open('get','../api/goodslist.php');
                 xhr.send();
 
-
+                
 
                 output.onclick = function(e){
                     // e.preventDefault();

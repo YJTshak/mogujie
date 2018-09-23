@@ -165,6 +165,19 @@
                 
             }
 
+            // var Img = document.querySelector('.Img');
+
+            // var index = 1;
+
+            // var timer = setInterval(function(){
+            //     index++;
+            //     if(index>2){
+            //         index = 1;
+            //     }
+
+            //     Img.src = 'img/Img'+index+'.jpg';
+            // },2000);
+
             var output = document.querySelector('#output');
                 
                 
