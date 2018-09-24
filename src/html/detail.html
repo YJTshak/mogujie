@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <title>详情页</title>
-    <link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../lib11/jquery.gdsZoom/jquery.gdsZoom.css">
     <link rel="stylesheet" href="../css/base (2).css" />
     <link rel="stylesheet" href="../css/base.css" />
-    <link rel="stylesheet" type="text/css" href="../css/detail.css" />
+    <link rel="stylesheet" href="../css/detail.css" />
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../lib11/jquery.gdsZoom/jquery.gdsZoom.js"></script>
+    <script src="../lib11/require.js"></script>
+    <script src="../js/detail.js"></script>
 </head>
 <body>
     <div id="header">
@@ -74,13 +79,13 @@
                     <div class="shop-pl fl">
                         <div class="big-img">
                             <button class="middle">
-                                <img src="../img/bags1.jpg" alt="" />
+                                <img src="../img/bags1.jpg" class="imgl" data-big="../img/bags1.jpg"/>
                             </button>
                         </div>
                         <div class="small">
-                            <ul>
-                                <li><img src="../img/n1.jpg" alt="" /></li>
-                                <li><img src="../img/n2.jpg" alt="" /></li>
+                            <ul class="small-l">
+                                <li><img src="../img/n1.jpg" data-big="../img/n1.jpg" class="img1"/></li>
+                                <li><img src="../img/n2.jpg" data-big="../img/n2.jpg" class="img2"/></li>
                             </ul>
                         </div>
                     </div>
@@ -88,11 +93,11 @@
                         <h1 class="goods-titles">2018新款男鞋子网红潮鞋男士网面透气跑步鞋韩版潮流男生低帮休闲鞋学生飞织个性百搭运动鞋男</h1>
                         <div class="discounts">
                             <dl class="price-del">
-                                <dt>价格：<del>￥114.00</del></dt>
+                                <dt>价格：<del class="price_l">￥114.00</del></dt>
                             </dl>
                             <dl class="price-cx clearfix">
                                 <dt>促销价：</dt>
-                                <dd class="fl">￥86.00</dd>
+                                <dd class="sale_l fl">￥86.00</dd>
                                 <dd class="fr">
                                     <span>评价：<i>62</i></span>
                                     <span>累计销量：<i>95</i></span>

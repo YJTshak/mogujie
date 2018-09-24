@@ -941,11 +941,28 @@ body {
   height: 100%;
 }
 
-.bags-cn {
-  width: 100%;
+.banner1 {
+  position: relative;
+  width: 630px;
+  height: 555px;
+  overflow: hidden;
+  padding-left: 21px;
   background: #fff;
+}
+
+.banner1 > ul {
+  position: absolute;
+  overflow: hidden;
+  width: 3300px;
+  height: 555px;
+}
+
+.banner1 > ul > li {
+  float: left;
+  width: 630px;
   height: 555px;
   padding-left: 21px;
+  overflow: hidden;
 }
 
 .bags-item {

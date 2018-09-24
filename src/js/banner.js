@@ -165,18 +165,314 @@
                 
             }
 
-            // var Img = document.querySelector('.Img');
 
-            // var index = 1;
+            let banner2 = document.querySelector('#banner2');
+            let ul2 = banner2.children[0];
 
-            // var timer = setInterval(function(){
-            //     index++;
-            //     if(index>2){
-            //         index = 1;
-            //     }
+            // 初始化
+            let index2 = 0;
 
-            //     Img.src = 'img/Img'+index+'.jpg';
-            // },2000);
+            // 无缝滚动关键1：把第一张复制到最后
+            ul2.appendChild(ul2.children[0].cloneNode(true));
+
+            let len2 = ul2.children.length;
+
+            // 设置ul1宽度，实现水平排列效果
+            ul2.style.width = banner2.clientWidth * len2 + 'px';
+
+            
+            // 添加上一张、下一张按钮
+            // let btnNext1 = document.createElement('span');
+            // btnNext1.className = 'mslide_next_btn';
+            // btnNext1.innerHTML = '&gt;';
+
+            // let btnPrev1 = document.createElement('span');
+            // btnPrev1.className = 'mslide_prev_btn';
+            // btnPrev1.innerHTML = '&lt;';
+
+            // banner1.appendChild(btnPrev1);
+            // banner1.appendChild(btnNext1);
+
+
+            let timer2 = setInterval(autoPlay2,5000);
+
+
+            // 鼠标移入移除
+            banner2.onmouseover = ()=>{
+                clearInterval(timer2);
+            }
+
+            banner2.onmouseout = ()=>{
+                timer2 = setInterval(autoPlay2,5000);
+
+            }
+
+            banner2.onclick = function(e){
+                
+                // 上一张，下一张
+                if(e.target.className === 'mslide_prev_btn'){
+                    index2--;
+                    show2();
+                }else if(e.target.className === 'mslide_next_btn'){
+                    index2++;
+                    show2();
+                }
+            }
+
+
+            function autoPlay2(){
+                index2++;
+
+                show2();
+            }
+
+
+            function show2(){
+                if(index2>=len2){
+                    // 无缝滚动
+                    ul2.style.left = 0;
+                    index2 = 1;
+                }else if(index2<0){
+                    index2 = len2-2;
+                }
+
+                animate(ul2,{left:-index2*banner2.clientWidth});
+
+                
+            }
+
+            let banner1 = document.getElementsByClassName('banner1')[0];
+            let ul1 = banner1.children[0];
+
+            // 初始化
+            let index1 = 0;
+
+            // 无缝滚动关键1：把第一张复制到最后
+            ul1.appendChild(ul1.children[0].cloneNode(true));
+
+            let len1 = ul1.children.length;
+
+            // 设置ul1宽度，实现水平排列效果
+            ul1.style.width = banner1.clientWidth * len1 + 'px';
+
+            
+            // 添加上一张、下一张按钮
+            // let btnNext1 = document.createElement('span');
+            // btnNext1.className = 'mslide_next_btn';
+            // btnNext1.innerHTML = '&gt;';
+
+            // let btnPrev1 = document.createElement('span');
+            // btnPrev1.className = 'mslide_prev_btn';
+            // btnPrev1.innerHTML = '&lt;';
+
+            // banner1.appendChild(btnPrev1);
+            // banner1.appendChild(btnNext1);
+
+
+            let timer1 = setInterval(autoPlay1,5000);
+
+
+            // 鼠标移入移除
+            banner1.onmouseover = ()=>{
+                clearInterval(timer1);
+            }
+
+            banner1.onmouseout = ()=>{
+                timer1 = setInterval(autoPlay1,5000);
+
+            }
+
+            banner1.onclick = function(e){
+                
+                // 上一张，下一张
+                if(e.target.className === 'mslide_prev_btn'){
+                    index1--;
+                    show1();
+                }else if(e.target.className === 'mslide_next_btn'){
+                    index1++;
+                    show1();
+                }
+            }
+
+
+            function autoPlay1(){
+                index1++;
+
+                show1();
+            }
+
+
+            function show1(){
+                if(index1>=len1){
+                    // 无缝滚动
+                    ul1.style.left = 0;
+                    index1 = 1;
+                }else if(index1<0){
+                    index1 = len1-2;
+                }
+
+                animate(ul1,{left:-index1*banner1.clientWidth});
+
+                
+            }
+
+            
+
+            let banner3 = document.querySelector('#banner3');
+            let ul3 = banner3.children[0];
+
+            // 初始化
+            let index3 = 0;
+
+            // 无缝滚动关键1：把第一张复制到最后
+            ul3.appendChild(ul3.children[0].cloneNode(true));
+
+            let len3 = ul3.children.length;
+
+            // 设置ul1宽度，实现水平排列效果
+            ul3.style.width = banner3.clientWidth * len3 + 'px';
+
+            
+            // 添加上一张、下一张按钮
+            // let btnNext1 = document.createElement('span');
+            // btnNext1.className = 'mslide_next_btn';
+            // btnNext1.innerHTML = '&gt;';
+
+            // let btnPrev1 = document.createElement('span');
+            // btnPrev1.className = 'mslide_prev_btn';
+            // btnPrev1.innerHTML = '&lt;';
+
+            // banner1.appendChild(btnPrev1);
+            // banner1.appendChild(btnNext1);
+
+
+            let timer3 = setInterval(autoPlay3,5000);
+
+
+            // 鼠标移入移除
+            banner3.onmouseover = ()=>{
+                clearInterval(timer3);
+            }
+
+            banner3.onmouseout = ()=>{
+                timer3 = setInterval(autoPlay3,5000);
+
+            }
+
+            banner3.onclick = function(e){
+                
+                // 上一张，下一张
+                if(e.target.className === 'mslide_prev_btn'){
+                    index3--;
+                    show3();
+                }else if(e.target.className === 'mslide_next_btn'){
+                    index3++;
+                    show3();
+                }
+            }
+
+
+            function autoPlay3(){
+                index3++;
+
+                show3();
+            }
+
+
+            function show3(){
+                if(index3>=len3){
+                    // 无缝滚动
+                    ul3.style.left = 0;
+                    index3 = 1;
+                }else if(index3<0){
+                    index3 = len3-2;
+                }
+
+                animate(ul3,{left:-index3*banner3.clientWidth});
+
+                
+            }
+
+
+
+
+            let banner4 = document.querySelector('#banner4');
+            let ul4 = banner4.children[0];
+
+            // 初始化
+            let index4 = 0;
+
+            // 无缝滚动关键1：把第一张复制到最后
+            ul4.appendChild(ul4.children[0].cloneNode(true));
+
+            let len4 = ul4.children.length;
+
+            // 设置ul1宽度，实现水平排列效果
+            ul4.style.width = banner4.clientWidth * len4 + 'px';
+
+            
+            // 添加上一张、下一张按钮
+            // let btnNext1 = document.createElement('span');
+            // btnNext1.className = 'mslide_next_btn';
+            // btnNext1.innerHTML = '&gt;';
+
+            // let btnPrev1 = document.createElement('span');
+            // btnPrev1.className = 'mslide_prev_btn';
+            // btnPrev1.innerHTML = '&lt;';
+
+            // banner1.appendChild(btnPrev1);
+            // banner1.appendChild(btnNext1);
+
+
+            let timer4 = setInterval(autoPlay4,5000);
+
+
+            // 鼠标移入移除
+            banner4.onmouseover = ()=>{
+                clearInterval(timer4);
+            }
+
+            banner4.onmouseout = ()=>{
+                timer4 = setInterval(autoPlay4,5000);
+
+            }
+
+            banner4.onclick = function(e){
+                
+                // 上一张，下一张
+                if(e.target.className === 'mslide_prev_btn'){
+                    index4--;
+                    show4();
+                }else if(e.target.className === 'mslide_next_btn'){
+                    index4++;
+                    show4();
+                }
+            }
+
+
+            function autoPlay4(){
+                index4++;
+
+                show4();
+            }
+
+
+            function show4(){
+                if(index4>=len4){
+                    // 无缝滚动
+                    ul4.style.left = 0;
+                    index4 = 1;
+                }else if(index4<0){
+                    index4 = len4-2;
+                }
+
+                animate(ul4,{left:-index4*banner4.clientWidth});
+
+                
+            }
+
+
+
 
             var output = document.querySelector('#output');
                 

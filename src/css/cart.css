@@ -75,16 +75,16 @@
 }
 
 #CartL {
-  height: 392px;
+  min-height: 392px;
   background: #fff;
 }
 
 #CartL > .container {
-  height: 392px;
+  min-height: 392px;
 }
 
 .goods-list {
-  height: 392px;
+  min-height: 392px;
   padding-top: 30px;
   position: relative;
 }
@@ -110,7 +110,7 @@
 
 .cart-tab {
   width: 100%;
-  height: 256px;
+  min-height: 256px;
 }
 
 .cart-tab > thead {
@@ -167,7 +167,7 @@
 }
 
 tbody {
-  height: 205px;
+  min-height: 205px;
   width: 100%;
 }
 

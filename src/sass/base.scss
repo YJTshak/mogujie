@@ -231,7 +231,12 @@ body{background:#F5F5F5;}
 .bags-a{
     >img{width: 100%;height: 100%;}
 }
-.bags-cn{width: 100%;background:#fff;height: 555px;padding-left:21px;}
+.banner1{position:relative;width:630px;height:555px;overflow:hidden;padding-left:21px;background:#fff;
+    >ul{position:absolute;overflow:hidden;width:3300px;height:555px;}
+    >ul{
+        >li{float:left;width: 630px;height: 555px;padding-left:21px;overflow: hidden;}
+    }
+    } 
 .bags-item{width: 182px;height: 233px;margin-right:21px;margin-bottom:24px;}
 .bags-item{
     >a{display:block;width: 182px;height: 233px;font-size:16px;color:#666;text-decoration:none;}

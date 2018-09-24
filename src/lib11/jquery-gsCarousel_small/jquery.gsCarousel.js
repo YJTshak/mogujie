@@ -1,8 +1,8 @@
 ;(function($){
     $.fn.gsCarousel_small = function(options){
         var defaults = {
-            width:279,
-            height:265,
+            width:230,
+            height:555,
             page:true,
             duration:2000,
             buttons:false,

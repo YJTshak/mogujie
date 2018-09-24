@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded',()=>{
                                         <p class="describe">${item.name}</p>
                                         <div class="goods-info">
                                             <b class="price">￥${item.price}</b>
-                                            <span class="sale">￥<del>${item.sale}</del></span>
+                                            <span class="sale"><del>￥${item.sale}</del></span>
                                             <span class="like fr"><img src="//s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png" alt="" />452</span>
                                         </div>
                                     </a>
@@ -75,12 +75,19 @@ document.addEventListener('DOMContentLoaded',()=>{
 
                 output.onclick = function(e){
                     // e.preventDefault();
-                    console.log(e.target.parentNode.parentNode.tagName.toLowerCase());
+                    console.log(e.target);
+                    var sli = e.target.parentNode.parentNode;
                     if(e.target.parentNode.parentNode.tagName.toLowerCase() == 'li'){
                         console.log(666)
                         var id = e.target.parentNode.parentNode.getAttribute('data-guid');
                         console.log(id);
-                        location.href="../html.detail.html?id=" + id;
+                        var imgurl = e.target.src;console.log(imgurl)
+                        var name = sli.children[2].children[0].innerHTML;console.log(name)
+                        var price = sli.children[2].children[1].children[0].innerHTML;console.log(price)
+                        var sale = sli.children[2].children[1].children[1].innerText;console.log(sale)
+
+
+                        location.href='../html/detail.html?id=' + id+'&imgurl='+imgurl+'&name='+name+'&price='+price+'&sale='+sale;
                     }
                 }
                 // let desc = false;
