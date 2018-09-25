@@ -473,6 +473,159 @@
 
 
 
+            let banner5 = document.querySelector('#banner5');
+            let ul5 = banner5.children[0];
+
+            // 初始化
+            let index5 = 0;
+
+            // 无缝滚动关键1：把第一张复制到最后
+            ul5.appendChild(ul5.children[0].cloneNode(true));
+
+            let len5 = ul5.children.length;
+
+            // 设置ul1宽度，实现水平排列效果
+            ul5.style.width = banner5.clientWidth * len5 + 'px';
+
+            
+            // 添加上一张、下一张按钮
+            // let btnNext1 = document.createElement('span');
+            // btnNext1.className = 'mslide_next_btn';
+            // btnNext1.innerHTML = '&gt;';
+
+            // let btnPrev1 = document.createElement('span');
+            // btnPrev1.className = 'mslide_prev_btn';
+            // btnPrev1.innerHTML = '&lt;';
+
+            // banner1.appendChild(btnPrev1);
+            // banner1.appendChild(btnNext1);
+
+
+            let timer5 = setInterval(autoPlay5,5000);
+
+
+            // 鼠标移入移除
+            banner5.onmouseover = ()=>{
+                clearInterval(timer5);
+            }
+
+            banner5.onmouseout = ()=>{
+                timer5 = setInterval(autoPlay5,5000);
+
+            }
+
+            banner5.onclick = function(e){
+                
+                // 上一张，下一张
+                if(e.target.className === 'mslide_prev_btn'){
+                    index5--;
+                    show5();
+                }else if(e.target.className === 'mslide_next_btn'){
+                    index5++;
+                    show5();
+                }
+            }
+
+
+            function autoPlay5(){
+                index5++;
+
+                show5();
+            }
+
+
+            function show5(){
+                if(index5>=len5){
+                    // 无缝滚动
+                    ul5.style.left = 0;
+                    index5 = 1;
+                }else if(index5<0){
+                    index5 = len5-2;
+                }
+
+                animate(ul5,{left:-index5*banner5.clientWidth});
+
+                
+            }
+
+
+
+            let banner6 = document.querySelector('#banner6');
+            let ul6 = banner6.children[0];
+
+            // 初始化
+            let index6 = 0;
+
+            // 无缝滚动关键1：把第一张复制到最后
+            ul6.appendChild(ul6.children[0].cloneNode(true));
+
+            let len6 = ul6.children.length;
+
+            // 设置ul1宽度，实现水平排列效果
+            ul6.style.width = banner6.clientWidth * len6 + 'px';
+
+            
+            // 添加上一张、下一张按钮
+            // let btnNext1 = document.createElement('span');
+            // btnNext1.className = 'mslide_next_btn';
+            // btnNext1.innerHTML = '&gt;';
+
+            // let btnPrev1 = document.createElement('span');
+            // btnPrev1.className = 'mslide_prev_btn';
+            // btnPrev1.innerHTML = '&lt;';
+
+            // banner1.appendChild(btnPrev1);
+            // banner1.appendChild(btnNext1);
+
+
+            let timer6 = setInterval(autoPlay6,5000);
+
+
+            // 鼠标移入移除
+            banner6.onmouseover = ()=>{
+                clearInterval(timer6);
+            }
+
+            banner6.onmouseout = ()=>{
+                timer6 = setInterval(autoPlay6,5000);
+
+            }
+
+            banner6.onclick = function(e){
+                
+                // 上一张，下一张
+                if(e.target.className === 'mslide_prev_btn'){
+                    index6--;
+                    show6();
+                }else if(e.target.className === 'mslide_next_btn'){
+                    index6++;
+                    show6();
+                }
+            }
+
+
+            function autoPlay6(){
+                index6++;
+
+                show6();
+            }
+
+
+            function show6(){
+                if(index6>=len6){
+                    // 无缝滚动
+                    ul6.style.left = 0;
+                    index6 = 1;
+                }else if(index6<0){
+                    index6 = len6-2;
+                }
+
+                animate(ul6,{left:-index6*banner6.clientWidth});
+
+                
+            }
+
+
 
             var output = document.querySelector('#output');
                 
